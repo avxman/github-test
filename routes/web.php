@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome')->with(['result'=>'Главная страница v1.0.5']);
+    return view('welcome')->with(['result'=>'Главная страница v1.0.6']);
 });
 
 Route::get('/jobs', function () {
