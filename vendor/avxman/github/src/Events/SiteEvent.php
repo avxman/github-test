@@ -40,7 +40,8 @@ class SiteEvent extends BaseEvent
             $comm = $this->commandGenerate("stash save --keep-index");
             if(Str::contains(Str::lower($comm), 'saved')){
                 $command = $this->commandGenerate("pull");
-                $command .= PHP_EOL.'В процессе обновлении найден конфликт, а именно, на сайте вручную внесли изменения: '.PHP_EOL.$comm;
+                $command .= PHP_EOL.'Обновлено. Однако, в процессе обновлении найден конфликт, 
+                а именно, на сайте вручную внесли изменения: '.PHP_EOL.$comm;
             }
             else{
                 $command = $comm;
