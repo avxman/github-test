@@ -1,0 +1,35 @@
+{
+    "name": "avxman/clear-cache",
+    "description": "The module cleaning cache for laravel >=8.0",
+    "homepage": "https://github.com/avxman/clear-cache",
+    "notification-url": "https://packagist.org/downloads/",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandr Kheyder",
+            "email": "wk.kheyder.a.v@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "8.*",
+        "laravel/framework": "^8.0"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Avxman\\ClearCache\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Avxman\\ClearCache\\Providers\\ClearCacheServiceProvider"
+            ],
+            "aliases": {
+                "ClearCache": "Avxman\\ClearCache\\Facades\\ClearCacheFacade"
+            }
+        }
+    }
+}

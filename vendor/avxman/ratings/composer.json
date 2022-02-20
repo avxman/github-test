@@ -1,0 +1,35 @@
+{
+    "name": "avxman/ratings",
+    "description": "The module ratings post, comment or other object for laravel >=8.0",
+    "homepage": "https://github.com/avxman/ratings",
+    "notification-url": "https://packagist.org/downloads/",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandr Kheyder",
+            "email": "wk.kheyder.a.v@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laravel/framework": "^8.0"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Avxman\\Rating\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Avxman\\Rating\\Providers\\RatingServiceProvider"
+            ],
+            "aliases": {
+                "Rating": "Avxman\\Rating\\Facades\\RatingFacade"
+            }
+        }
+    }
+}
